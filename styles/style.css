@@ -252,3 +252,36 @@ header div{
         flex-direction: column;
     }
 }
+
+/*CLIENTS*/
+.clients{
+    padding: 6rem 8%;
+}
+.clients .textArea h1, .clients .textArea p{
+    margin: 10px auto;
+}
+.clients .textArea p{
+
+}
+.clients .client-img-container{
+    text-align: center;
+}
+.clients .client-img-container .client-img-PC img{
+    width: 100%;
+}
+.clients .client-img-container .client-img-Mobile{
+    display: none;
+}
+.clients .textArea .client-img-container .client-img-Mobile img{
+    width: 100%;
+} 
+
+@media screen and (max-width : 900px) {
+
+    .clients .client-img-container .client-img-Mobile{
+        display: block;
+    }
+    .clients .client-img-container .client-img-PC{
+        display: none;
+    }
+}
