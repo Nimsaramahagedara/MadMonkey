@@ -142,6 +142,9 @@ header div{
         margin-top: 100px;
     }
 }
+section{
+        padding: 6rem 8%;
+}
 
 /*REEL*/
 .reel{
@@ -290,7 +293,7 @@ header div{
 .project{
     background-color: var(--Charcoal);
 }
-.project .textArea{
+.project .textArea, .textArea{
     color: white !important;
 }
 .projects-container{
@@ -332,11 +335,64 @@ header div{
         flex-basis: unset;
     }   
 }
-
-/*ROCKET*/
-.rocket{
-    background-image: url("../Resources/Mad Monkey/bgimg.jpeg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+/*TESTIMONIAL*/
+.testimonial{
+    background-color: var(--Charcoal);
 }
+
+.carousel-inner{
+    width: 85% !important;
+    margin: 0px auto !important;
+}
+.three-review-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.three-review-container .review-box{
+    flex-basis: 33%;
+    color: white;
+    padding: 10px;
+}
+.review-box .pro-img{
+    width: 80px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.review-box .pro-img img{
+    width: 100%;
+}
+.review-box .rev-desc{
+    font-size: 12px;
+    color: var(--White);
+    font-weight: 100;
+}
+.review-box .rev-name{
+    font-size: 14px;
+    color: grey;
+}
+.review-box .rev-post{
+    font-size: 14px;
+    color: grey;
+}
+.review-box .rev-desc::before, .review-box .rev-desc::after{
+    color: var(--Crimson);
+    content: '\275D';
+    display: block;
+    font-size: 1em;
+    line-height: 0;
+    margin: 1rem 0;
+}
+
+#container-fluid{
+    color: white;
+    margin-top: 0 !important;
+}
+
+
+.carousel-control-next, .carousel-control-prev{
+    width: fit-content !important;
+}
+.carousel-indicators{
+    margin-bottom: -30 !important;
+}
+
