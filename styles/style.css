@@ -258,13 +258,10 @@ section{
 
 /*CLIENTS*/
 .clients{
-    padding: 6rem 8%;
+    padding: 3rem 8%;
 }
 .clients .textArea h1, .clients .textArea p{
     margin: 10px auto;
-}
-.clients .textArea p{
-
 }
 .clients .client-img-container{
     text-align: center;
@@ -395,4 +392,135 @@ section{
 .carousel-indicators{
     margin-bottom: -30 !important;
 }
+@media screen and (max-width : 900px) {
+    
+    .three-review-container .review-box:first-child{
+        display: none;
+    }
+    .three-review-container .review-box:nth-child(3){
+        display: none;
+    }
+    .three-review-container .review-box{
+        flex-basis: unset;
+    }
+    
+}
 
+/*FOOTER*/
+.footer{
+    background-color: black;
+    color: white;
+    padding: 6rem 8%;
+}
+.footer .first-container{
+    display: flex;
+    justify-content: space-between;
+}
+.footer .first-container .social-links a{
+    text-decoration: none;
+}
+.footer .first-container .social-links{
+    display: flex;
+}
+.footer .first-container .social-links i{
+    font-size: 32px;
+    color: grey;
+    transition: 0.3s;
+    margin-right: 10px;
+}
+.footer .first-container .social-links i:hover{
+    color: var(--Crimson);
+}
+.email-field{
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.join-fam h2{
+    font-weight: 600;
+}
+#footer-hr{
+    width: 100%;
+    height: 5px;
+    background-color: red;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    width: 100%;
+    border-top: 2px solid red;
+    padding: 10px;
+    text-align: left;
+}
+.footer .second-container{
+    margin: 4rem 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .second-container ul{
+    list-style: none;
+    padding-left: unset;
+    flex-basis: 33.33%;
+}
+.footer .second-container ul li{
+    margin: 10px 0px;
+}
+.footer .second-container ul li a{
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+    font-weight: 100;
+    position: relative;
+}
+.footer .second-container ul li a::after{
+    position: absolute;
+    top: 2px;
+    right: -20px;
+    transition: 0.3s;
+    content: ">";
+    color: red;
+    font-size: 16px;
+}
+.footer .second-container ul li a:hover::after{
+    right: -30px;
+}
+.footer .third-container{
+    display: flex;
+    justify-content: space-between;
+}
+.footer .third-container .box{
+    text-decoration: none;
+    display: block;
+    color: white;
+    flex-basis: 33.33%;
+}
+.footer .third-container .box i{
+    font-size: 32px;
+}
+.footer .third-container .box p{
+    display: inline-block;
+    color: grey;
+}
+.Dynamic-Biz{
+    text-decoration: none;
+}
+
+@media screen and (max-width : 900px) {
+    .footer .first-container, .second-container,.third-container{
+        flex-direction: column;
+    }
+    .second-container ul{
+        margin-bottom: unset;
+        flex-basis: unset;
+    }
+    .first-container{
+        row-gap: 15px;
+    }
+    .third-container .box{
+        flex-basis: unset;
+    }
+    footer{
+        text-align: center;
+    }
+}
