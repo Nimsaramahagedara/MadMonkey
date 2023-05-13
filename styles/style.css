@@ -12,6 +12,7 @@
     --Red : #CC2000;
     --Crimson : #FF2800;
     --Charcoal : #292929;
+    --InputBg : rgb(229,231,235);
 }
 header{
     position: absolute;
@@ -46,6 +47,9 @@ header div{
     padding: 10px 20px;
     cursor: pointer;
     position: relative;
+}
+.navigation a:hover{
+    color: white;
 }
 .navigation a::after{
     position: absolute;
@@ -198,7 +202,7 @@ section{
 }
 /*SERVICES*/
 .services{
-    padding: 6rem 8%;
+    padding: 4rem 8%;
     background-color: var(--Charcoal);
 }
 .services div{
@@ -208,6 +212,20 @@ section{
     margin: 0px auto;
     color: white;
     line-height: 34px;
+}
+.see-more{
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid var(--Crimson);
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.see-more:hover{
+    background-color: var(--Crimson);
+    color: white;
 }
 .services .services-div .box h1{
     margin: 10px auto;
@@ -232,7 +250,7 @@ section{
 .services .service-box-container .service-box .Sbox img{
     width: 100%;
 }
-.services .service-box-container .service-box .Sbox h1{
+.services .service-box-container .service-box .Sbox h3{
     display: block;
     position: absolute;
     top: 0px;
@@ -243,7 +261,7 @@ section{
     text-align: center;
     transition: 0.3s;
 }
-.services .service-box-container .service-box .Sbox:hover > h1{
+.services .service-box-container .service-box .Sbox:hover > h3{
     background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -253,6 +271,7 @@ section{
     }
     .services .service-box-container .service-box{
         flex-direction: column;
+        row-gap: 10px;
     }
 }
 
@@ -262,6 +281,7 @@ section{
 }
 .clients .textArea h1, .clients .textArea p{
     margin: 10px auto;
+    color: black;
 }
 .clients .client-img-container{
     text-align: center;
@@ -298,6 +318,7 @@ section{
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 20px auto;
+    row-gap: 10px;
 }
 .projects-container a{
     display: block;
@@ -331,6 +352,47 @@ section{
     .projects-container a{
         flex-basis: unset;
     }   
+}
+/*CONTACT US*/
+.contact-us-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contact-us-form div{
+    flex-basis: 50%;
+}
+.contact-us-form .contact-details div{
+    flex-basis: 50%;
+    margin: 20px 0px;
+}
+.contact-us-form .contact-details div i{
+    font-size: 24px;
+    color: var(--Crimson);
+}
+.contact-us-form .contact-details div p:first-of-type{
+    font-weight: bold;
+}
+.contact-us-form .contact-details div a{
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+.contact-us-form .form form{
+    display: flex;
+    flex-direction: column;
+}
+.contact-us-form .form form *{
+    margin: 10px 0px;
+}
+.contact-us-form .form form input[type="text"],.contact-us-form .form form input[type="email"],.contact-us-form .form form textarea{
+    background-color: var(--InputBg);
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+}
+.contact-us-form .form form input[type="submit"]{
+    margin-top: 20px;
 }
 /*TESTIMONIAL*/
 .testimonial{
@@ -410,7 +472,7 @@ section{
 .footer{
     background-color: black;
     color: white;
-    padding: 6rem 8%;
+    padding: 4rem 8%;
 }
 .footer .first-container{
     display: flex;
@@ -450,8 +512,9 @@ footer{
     color: white;
     width: 100%;
     border-top: 2px solid red;
-    padding: 10px;
-    text-align: left;
+    padding: 10px 8%;
+    display: flex;
+    justify-content: space-between;
 }
 .footer .second-container{
     margin: 4rem 0px;
@@ -505,6 +568,13 @@ footer{
 .Dynamic-Biz{
     text-decoration: none;
 }
+.footer-logo{
+    width: 30%;
+}
+.footer-logo img{
+    width: 100%;
+    margin-left: -10%;
+}
 
 @media screen and (max-width : 900px) {
     .footer .first-container, .second-container,.third-container{
@@ -517,10 +587,15 @@ footer{
     .first-container{
         row-gap: 15px;
     }
+    .footer-logo{
+        width: 60%;
+    }
     .third-container .box{
         flex-basis: unset;
     }
     footer{
         text-align: center;
+        flex-direction: column;
     }
+
 }
