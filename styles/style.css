@@ -499,6 +499,12 @@ section{
     display: flex;
     justify-content: space-between;
 }
+.footer .first-container .join-fam{
+    width: 30%;
+}
+.footer .first-container .footer-logo{
+    width: 100%;
+}
 .footer .first-container .social-links a{
     text-decoration: none;
 }
@@ -513,14 +519,6 @@ section{
 }
 .footer .first-container .social-links i:hover{
     color: var(--Crimson);
-}
-.email-field{
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-.join-fam h2{
-    font-weight: 600;
 }
 #footer-hr{
     width: 100%;
@@ -589,9 +587,6 @@ footer{
 .Dynamic-Biz{
     text-decoration: none;
 }
-.footer-logo{
-    width: 30%;
-}
 .footer-logo img{
     width: 100%;
     margin-left: -10%;
@@ -600,6 +595,9 @@ footer{
 @media screen and (max-width : 900px) {
     .footer .first-container, .second-container,.third-container{
         flex-direction: column;
+    }
+    .footer .first-container .join-fam{
+        width: 90%;
     }
     .second-container ul{
         margin-bottom: unset;
