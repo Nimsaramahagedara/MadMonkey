@@ -5,21 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="Resources/Mad Monkey/White Monkey icon.png">
     <script src="script/script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <script src="js/script.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>Dynamic Biz ADD TITLE HERE</title>
 </head>
 <body>
-    <header>
-        <div class="header-element">
+    <div class="scrolltop-btn" onclick="smoothScrollToId('top')"><i class="fa fa-arrow-circle-up"></i></div>
+    <header id="top">
+        <div class="header-element" id="home">
             <div class="navigation menu">
-                    <a href="#">Home</a>
-                    <a href="#">Services</a>
-                    <a href="#">Work</a>
-                    <a href="#">About</a>
+                    <a onclick="smoothScrollToId('home')">Home</a>
+                    <a onclick="smoothScrollToId('service')" >Services</a>
+                    <a onclick="smoothScrollToId('projects')">Work</a>
+                    <a onclick="smoothScrollToId('about')">About</a>
             </div>
             <div class="logo">
                 <img src="Resources/Mad Monkey/2 White LOGO 5000x5000.png" alt="">
@@ -39,9 +41,9 @@
     <section class="reel">
         <div class="box">
             <h1>YOUR VIDEO SHOULD<span>MAKE AN IMPACT</span></h1>
-            <p>Bottle Rocket Media specializes in video production, motion graphics, and virtual event production.</p>
+            <p>MAD Monkey specializes in video production and Photography</p>
             <p class="special-para">
-                Chicago based video production company, Bottle Rocket Media is located in Chicago’s, Fulton Market District. We are an award-winning, full-service video production agency custom built to make stunning videos fun and easy for our clients.
+                Welcome to our videography/photography website! We're a Sydney based team of passionate professionals who started this journey in 2018. Since then, we have worked on over 100 projects, capturing unforgettable moments and turning them into lasting memories.
             </p>
             <a href="" class="start-project-btn">Start Your Project</a>
         </div>
@@ -49,21 +51,21 @@
             <video src="Resources/Mad Monkey/Intro MOV File 2.mp4" controls></video>
         </div>
     </section>
-    <section class="services">
+    <section class="services" id="service">
         <div class="services-div">
             <div class="box">
                 <h1>SERVICES</h1>
-                <p>Bottle Rocket Media is a Chicago based full-service video production agency.</p>
+                <p>MAD Monkey is a Sydney based full-service video production and photography agency.</p>
                 <p class="special-para">
-                    Chicago based video production company, Bottle Rocket Media is located in Chicago’s, Fulton Market District. We are an award-winning, full-service video production agency custom built to make stunning videos fun and easy for our clients.
+                    At our core, we believe in providing the highest quality of work and going the extra mile to ensure customer satisfaction. We understand that each project is unique, and we strive to cater to everyone's individual needs
                 </p>
                 <a href="" class="start-project-btn">Start Your Project</a>
             </div>
             <div class="service-box-container">
                 <div class="service-box">
                     <a class="Sbox" href="">
-                        <img src="Resources/Mad Monkey/Services/Motion-Reel.jpg" alt="">
-                        <h3>Motion Graphics</h3>
+                        <img src="Resources/Mad Monkey/Services/Motion-Reel.webp" alt="">
+                        <h3>Event Photography</h3>
                     </a>
                     <a class="Sbox" href="">
                         <img src="Resources/Mad Monkey/Services/Screen-Shot-2023-01-18-at-10.webp" alt="">
@@ -92,10 +94,10 @@
             </div>
         </div>
     </section>
-    <section class="services project">
+    <section class="services project" id="projects">
         <div class="textArea">
             <h1>Recent Projects</h1>
-            <p>Here's a taste of some of our recent work.</p>
+            <p>Being a young team, we understand the needs of the young crowd and are always looking for fresh and innovative ways to capture the moment. We take great pride in our work and are committed to delivering exceptional results every time. Whether it's a wedding, a corporate event, or a family photo-shoot, we bring our best to every project.</p>
         </div>
         <div class="projects-container">
             <a class="project-box" href="#">
@@ -115,56 +117,13 @@
                 <h1>Title goes here</h1>
             </a>
         </div>
-        <a href="" class="start-project-btn">View All Project</a>
-    </section>
-    <section class="clients contact-us-form">
-        <div class="contact-details">
-            <div class="contact-box">
-                <i class="fa-solid fa-envelope"> </i><p>Email Us</p>
-                <p>Our friendly team is here to help.</p>
-                <a href="mailto:">Email adress goes here</a>
-            </div>
-            <div class="contact-box">
-                <i class="fa-solid fa-location-dot"> </i><p>Location</p>
-                <p>Our friendly team is here to help.</p>
-                <a href="mailto:">Email adress goes here</a>
-            </div>
-            <div id="map-container-google-1" class="z-depth-1-half map-container">
-                <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
-                style="border:0" allowfullscreen></iframe>
-            </div>
-            <div style="display: flex;">
-                <div class="contact-box">
-                    <i class="fa-solid fa-phone"> </i><p>Call Us</p>
-                    <a href="mobile:">12345678</a>
-                </div>
-                <div class="contact-box">
-                    <i class="fa-brands fa-whatsapp" ></i><p>Whatsapp</p>
-                    <a href="mobile:">12345678</a>
-                </div>
-            </div>
-            
-        </div>
-        <div class="form">
-            <form action="">
-                <label for="name">Name</label>
-                <input type="text" name="name">
-
-                <label for="email">Email</label>
-                <input type="email" name="email">
-
-                <label for="desc">Description</label>
-                <textarea name="desc" id="" cols="30" rows="10">
-
-                </textarea>
-                <input type="submit" class="start-project-btn">
-            </form>
-        </div>
+        <a href="projects.html" class="start-project-btn">View All Project</a>
     </section>
     <section class="testimonial">
         <div class="textArea" id="container-fluid">
             <h3>TESTIMONIALS</h3>
-            <p>Read what our existing clients have to say about the Bottle Rocket Media team.</p>
+            <p>Read what our existing clients have to say about the MAD Monkey Media team.</p>
+            <p>what sets us apart from the rest is our friendly and approachable nature. We believe that the best work comes from a collaborative effort, where we work together to achieve the desired outcome. We value our clients' input and are always happy to listen to their ideas</p>
           </div>
         <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
@@ -274,7 +233,51 @@
           </div>
           
     </section>
-    <div class="footer">
+    <section class="clients contact-us-form">
+        <div class="contact-details">
+            <div class="contact-box">
+                <i class="fa-solid fa-envelope"> </i><p>Email Us</p>
+                <p>Our friendly team is here to help.</p>
+                <a href="mailto:">Email adress goes here</a>
+            </div>
+            <div class="contact-box">
+                <i class="fa-solid fa-location-dot"> </i><p>Location</p>
+                <p>Our friendly team is here to help.</p>
+                <a href="mailto:">Email adress goes here</a>
+            </div>
+            <div id="map-container-google-1" class="z-depth-1-half map-container">
+                <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                style="border:0" allowfullscreen></iframe>
+            </div>
+            <div style="display: flex;">
+                <div class="contact-box">
+                    <i class="fa-solid fa-phone"> </i><p>Call Us</p>
+                    <a href="mobile:">12345678</a>
+                </div>
+                <div class="contact-box">
+                    <i class="fa-brands fa-whatsapp" ></i><p>Whatsapp</p>
+                    <a href="mobile:">12345678</a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="form">
+            <form action="">
+                <label for="name">Name</label>
+                <input type="text" name="name">
+
+                <label for="email">Email</label>
+                <input type="email" name="email">
+
+                <label for="desc">Description</label>
+                <textarea name="desc" id="" cols="30" rows="10">
+
+                </textarea>
+                <input type="submit" class="start-project-btn">
+            </form>
+        </div>
+    </section>
+    <div class="footer" id="about">
         <div class="first-container">
             <div class="join-fam">
                 <div class="footer-logo">

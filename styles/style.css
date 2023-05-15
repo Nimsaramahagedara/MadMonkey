@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
 }
 :root{
     --Primary : #bf4000;
@@ -13,6 +14,23 @@
     --Crimson : #FF2800;
     --Charcoal : #292929;
     --InputBg : rgb(229,231,235);
+}
+.scrolltop-btn{
+    
+}
+.scrolltop-btn i{
+    font-size: 2rem;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: var(--Crimson);
+    color: white;
+    position: fixed;
+    top: 90%;
+    right: 1%;
+    opacity: 0.5;
+}
+h1, .h1{
+    font-size: calc(1rem + 1vw) !important;
 }
 header{
     position: absolute;
@@ -99,6 +117,7 @@ header div{
     padding: 10px 40px;
     transition: 0.3s;
     border-radius: 4px;
+    border: none;
 }
 .start-project-btn:hover{
     background-color: var(--Crimson);
@@ -122,7 +141,7 @@ header div{
         transition: height 1s;
     }
     .navigation a{
-        color: black;
+        color: black !important;
         border-bottom: 1px solid grey;
     }
     .logo{
@@ -167,7 +186,7 @@ section{
     margin: 10px auto;
 }
 .reel .box p{
-    font-size: 22px;
+    font-size: 1rem;
     margin: 10px auto;
 }
 .special-para{
@@ -231,7 +250,7 @@ section{
     margin: 10px auto;
 }
 .services .services-div .box p{
-    font-size: 22px;
+    font-size: 18px;
 }
 .services .services-div .box .special-para{
     color: white;
@@ -267,7 +286,7 @@ section{
 
 @media screen and (max-width : 900px) {
     .services{
-        padding: 6rem 4%;
+        padding: 1rem 4%;
     }
     .services .service-box-container .service-box{
         flex-direction: column;
@@ -390,6 +409,8 @@ section{
     padding: 10px 20px;
     border-radius: 5px;
     border: none;
+    outline: none;
+    resize: none;
 }
 .contact-us-form .form form input[type="submit"]{
     margin-top: 20px;
@@ -531,7 +552,7 @@ footer{
 }
 .footer .second-container ul li a{
     text-decoration: none;
-    font-size: 24px;
+    font-size: 20px;
     color: white;
     font-weight: 100;
     position: relative;

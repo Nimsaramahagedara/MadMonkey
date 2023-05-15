@@ -1,0 +1,61 @@
+body{
+    background-color: #EDEDED !important;
+}
+.gallery-header{
+    background-color: white;
+    width: 84%;
+    margin: 20px auto;
+    padding: unset;
+    border-radius: 10px;
+}
+.gallery-header h4{
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+}
+.gallery-header h4::after{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5%;
+    height: 3px;
+    background-color: red;
+    content: "";
+}
+
+.projects-container a{
+    flex-basis: 33% !important;
+}
+.all-projects{
+    padding: 0px 8%;
+}
+
+@media screen and (max-width : 900px) {
+    .services .services-div .box p {
+        font-size: unset;
+    }
+    .projects-container a{
+        flex-basis: 100% !important;
+    }
+}
+/*Gallery content
+.gallery-content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.gallery-content a{
+    text-decoration: none;
+    border-radius: 10px;
+    flex-basis: 33%;
+}
+.gallery-content a img{
+    width: 100%;
+}
+.gallery-content a h4{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}*/
