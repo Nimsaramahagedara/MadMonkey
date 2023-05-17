@@ -1,3 +1,13 @@
+:root{
+    --Primary : #bf4000;
+    --Secondry : #f5911c;
+    --Black : #0000;
+    --White : #ffffff;
+    --Red : #CC2000;
+    --Crimson : #FF2800;
+    --Charcoal : #292929;
+    --InputBg : rgb(229,231,235);
+}
 body{
     background-color: #EDEDED !important;
 }
@@ -26,7 +36,64 @@ body{
     background-color: red;
     content: "";
 }
-.all-services-container .service-box-container{
+.all-services-container .service-box-container .row-1{
     width: 98%; 
     margin: 20px auto;  
+    display: flex;
+    justify-content: space-between;
+}
+.all-services-container .service-box-container div .service-card{
+    flex-basis: 33%;
+    border-radius: 10px;
+    background-color: white;
+    padding: 15px;
+    color: black;
+    display: flex;
+}
+.service-card .icon{
+    flex-basis: 26%;
+}
+.service-card .textarea{
+    flex-basis: 74%;
+}
+.service-card .icon, .service-card .textarea{
+    padding: 5px;
+}
+.service-card .icon, .service-card .textarea h5{
+    font-size:16px ;
+    color: var(--Charcoal);
+}
+.service-card .icon, .service-card .textarea p{
+    font-size: 10px;
+    color: var(--Charcoal);
+}
+.service-card .icon i{
+    font-size: 72px;
+    color: var(--Crimson);
+}
+.image-in-service-box{
+    background-color: var(--Charcoal) !important;
+    background-image: url('../Resources/Mad Monkey/2\ White\ LOGO\ 5000x5000.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-clip: border-box;
+    background-position: center;
+    min-height: 135px;
+}
+
+.service-card img{
+    width: 100%;
+}
+
+@media screen and (max-width : 1000px) {
+    section{
+        padding: 4rem 0px;
+    }
+}
+@media screen and (max-width : 800px) {
+    .all-services-container .service-box-container .row-1{
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    
 }
