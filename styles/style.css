@@ -288,9 +288,10 @@ section{
     color: white;
 }
 .services .service-box-container .service-box{
-    display: flex;
-    justify-content: space-evenly;
-    margin: 20px 0px;
+   /* display: flex;
+    justify-content: space-evenly;*/
+    width: 70%;
+    margin: 20px auto;
 }
 .services .service-box-container .service-box .Sbox{
     text-decoration: none;
@@ -324,6 +325,7 @@ section{
     .services .service-box-container .service-box{
         flex-direction: column;
         row-gap: 10px;
+        width: 100%;
     }
     .services .services-div{
         flex-basis: unset;
