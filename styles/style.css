@@ -241,7 +241,7 @@ section{
 }
 .services-image{
     flex-basis: 35%;
-    background-image: url('../images/benches.jpg');
+    background-image: url('../Resources/Mad Monkey/pexels-kyle-loftus-2510428.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -484,7 +484,7 @@ section{
 @media screen and (max-width : 900px) {
   
     .contact-us-form div{
-        flex-basis: unset;
+        flex-basis: 100%;
     }
     #map-container-google-1 iframe{
         height: 100%;
