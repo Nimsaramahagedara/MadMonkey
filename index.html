@@ -33,7 +33,7 @@
         <div class="logo-shape" id="logo-shape"></div>
     </header>
     <div class="home-video">
-        <video autoplay muted type="video/mp4" plays-inline>
+        <video autoplay muted type="video/mp4" plays-inline width="100%" height="100%" id="myVideo">
             <source src="./Resources/Mad Monkey/Intro MOV File 2.mp4">
         </video>
     </div>
@@ -47,7 +47,7 @@
             <a href="" class="start-project-btn">Start Your Project</a>
         </div>
         <div class="box">
-            <video muted controls>
+            <video muted controls width="100%" height="100%">
                 <source src="./Resources/Mad Monkey/Intro MOV File 2.mp4">
             </video>
         </div>
@@ -332,6 +332,11 @@
     </footer>
 
     <script src="script/script.js" defer></script>
+    <script>
+        window.onload = ()=>{
+            document.getElementById('myVideo').play();
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

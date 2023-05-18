@@ -63,7 +63,7 @@ function menu(){
   window.addEventListener('scroll', fixNavigationBar);
 
       // Check if the device is a mobile device
-      function isMobileDevice() {
+      /*function isMobileDevice() {
         return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
       }
   
@@ -86,7 +86,7 @@ function menu(){
       }
   
       autoplayVideoOnMobile();
-      loopVideo();
+      loopVideo();*/
   
   
   
