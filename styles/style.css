@@ -329,7 +329,7 @@ section{
     }
     .services .services-div{
         flex-basis: unset;
-        padding: 20px 20px 20px 0px;
+        padding: 20px 0px 20px 0px;
     }
     .services-image{
         display: none;

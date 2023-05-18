@@ -14,16 +14,22 @@ body{
 }
 .work{
     width: 100%;
-    background-color: var(--Charcoal) ;
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0,0.8), rgba(0, 0, 0,.5)), url("../Resources/Mad Monkey/WorkBg.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    background-attachment: fixed;
     position: absolute;
     top: 0px;
-    height: 50vh;
+    height: 70vh;
     color: white;
+    text-align: center;
 }
 .gallery-header{
     background-color: white;
     width: 84%;
-    margin: 40vh auto 20px auto;
+    margin: 60vh auto 20px auto;
     padding: unset;
     border-radius: 10px;
 }
