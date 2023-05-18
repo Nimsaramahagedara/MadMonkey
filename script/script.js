@@ -61,8 +61,32 @@ function menu(){
   }
   
   window.addEventListener('scroll', fixNavigationBar);
-  var vid = document.getElementById("myVideo");
-  vid.play();
+
+      // Check if the device is a mobile device
+      function isMobileDevice() {
+        return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+      }
+  
+      // Autoplay the video on mobile devices
+      function autoplayVideoOnMobile() {
+        var video = document.getElementById('myVideo');
+  
+        if (isMobileDevice()) {
+          video.play();
+        }
+      }
+  
+      // Loop the video when it ends
+      function loopVideo() {
+        var video = document.getElementById('myVideo');
+        video.addEventListener('ended', function () {
+          video.currentTime = 0;
+          video.play();
+        });
+      }
+  
+      autoplayVideoOnMobile();
+      loopVideo();
   
   
   
