@@ -42,6 +42,7 @@ function menu(){
 
    function fixNavigationBar() {
     const logo = document.getElementById('logo');
+    const menuIcon = document.getElementById('icon');
     const navItems = document.getElementById('nav-menu-items');
     var r = document.querySelector(':root');
     var yOffset = window.pageYOffset;
@@ -50,15 +51,18 @@ function menu(){
       r.style.setProperty('--NavbarBG', 'rgba(0, 0, 0, 0.5)');
       navItems.style.color = 'white';
       logo.style.filter = 'unset';
+      menuIcon.style.color = 'white';
     } else {
       r.style.setProperty('--NavbarBG', 'rgba(0, 0, 0, 0.0)');
       navItems.style.color = 'black';
       logo.style.filter = 'invert()';
+      menuIcon.style.color = 'black';
     }
   }
   
   window.addEventListener('scroll', fixNavigationBar);
-  
+  var vid = document.getElementById("myVideo");
+  vid.play();
   
   
   

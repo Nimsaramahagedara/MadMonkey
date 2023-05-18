@@ -1,10 +1,29 @@
+:root{
+    --Primary : #bf4000;
+    --Secondry : #f5911c;
+    --Black : #0000;
+    --White : #ffffff;
+    --Red : #CC2000;
+    --Crimson : #FF2800;
+    --Charcoal : #292929;
+    --InputBg : rgb(229,231,235);
+    --NavbarBG : rgba(0,0,0,0);
+}
 body{
     background-color: #EDEDED !important;
+}
+.work{
+    width: 100%;
+    background-color: var(--Charcoal) ;
+    position: absolute;
+    top: 0px;
+    height: 50vh;
+    color: white;
 }
 .gallery-header{
     background-color: white;
     width: 84%;
-    margin: 20px auto;
+    margin: 40vh auto 20px auto;
     padding: unset;
     border-radius: 10px;
 }

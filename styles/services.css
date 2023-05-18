@@ -12,13 +12,15 @@ body{
     background-color: #EDEDED !important;
 }
 .header{
+    position: absolute;
+    top: 0px;
     background-image:linear-gradient(to bottom, rgba(0, 0, 0,.5), rgba(0, 0, 0,.5)), url(../images/benches.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-clip: border-box;
     background-attachment: fixed;
-    height: 50vh;
+    height: 70vh;
     align-items: center;
     display: table;
     width: 100%;
@@ -28,6 +30,18 @@ body{
     text-align: center;
     vertical-align: middle;
     color: white;
+    font-weight: bold;
+    position: relative;
+}
+.header h4::after{
+    content: "";
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 5px;
+    width: 10%;
+    background-color: var(--Crimson);
 }
 
 @media screen and (max-width : 800px) {
@@ -37,7 +51,7 @@ body{
     
 }
 .all-services-container{
-
+    margin-top: 400px;
 }
 
 .all-services-container h4:first-child{
@@ -51,7 +65,7 @@ body{
     border-radius: 10px;
 
 }
-.all-services-container h4::after{
+/*.all-services-container h4::after{
     position: absolute;
     top: 70%;
     left: 50%;
@@ -60,7 +74,7 @@ body{
     height: 3px;
     background-color: red;
     content: "";
-}
+}*/
 .all-services-container .service-box-container .row-1{
     width: 98%; 
     margin: 20px auto;  
@@ -87,6 +101,7 @@ body{
 .service-card .icon, .service-card .textarea h5{
     font-size:16px ;
     color: var(--Charcoal);
+    font-weight: bold;
 }
 .service-card .icon, .service-card .textarea p{
     font-size: 10px;
@@ -119,6 +134,9 @@ body{
     .all-services-container .service-box-container .row-1{
         flex-direction: column;
         row-gap: 10px;
+    }
+    .all-services-container{
+        margin-top: 250px;
     }
     
 }
