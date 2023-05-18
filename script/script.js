@@ -38,3 +38,27 @@ function menu(){
        requestAnimationFrame(scrollAnimation);
      }
    }
+  
+
+   function fixNavigationBar() {
+    const logo = document.getElementById('logo');
+    const navItems = document.getElementById('nav-menu-items');
+    var r = document.querySelector(':root');
+    var yOffset = window.pageYOffset;
+  
+    if (yOffset >= 300) {
+      r.style.setProperty('--NavbarBG', 'rgba(0, 0, 0, 0.5)');
+      navItems.style.color = 'white';
+      logo.style.filter = 'unset';
+    } else {
+      r.style.setProperty('--NavbarBG', 'rgba(0, 0, 0, 0.0)');
+      navItems.style.color = 'black';
+      logo.style.filter = 'invert()';
+    }
+  }
+  
+  window.addEventListener('scroll', fixNavigationBar);
+  
+  
+  
+  

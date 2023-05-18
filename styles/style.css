@@ -14,6 +14,7 @@
     --Crimson : #FF2800;
     --Charcoal : #292929;
     --InputBg : rgb(229,231,235);
+    --NavbarBG : rgba(0,0,0,0);
 }
 .scrolltop-btn{
     position: fixed;
@@ -33,16 +34,19 @@
 /*h1, .h1{
     font-size: calc(1rem + 1vw) !important;
 }*/
-header{
-    position: fixed;
+
+#top{
+    transition: all 0.3s ease-in-out;
+    position: sticky;
+    background-color: var(--NavbarBG);
+    width: 100%;
+    left: 0px;
     z-index: 1;
     top: 0px;
-    left: 0px;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    color: black;
 }
 header div{
-    color: white;
+    color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -92,6 +96,7 @@ header div{
     z-index: 1;
     width: 110px;
     transform: translateX(-42%);
+    filter: invert();
 }
 .logo-shape{
     left: 50%;
@@ -102,7 +107,7 @@ header div{
     width: 150px;
 }
 .logo-shape::after{
-    background: rgba(0,0,0,0.6);
+    background: var(--NavbarBG);
     border-radius: 50%;
     bottom: 0;
     content: ' ';
@@ -245,7 +250,7 @@ section{
     padding: 2rem 8%;
     background-color: var(--Charcoal);
 }
-.services div h1{
+.services div h3{
     text-align: center;
     margin: 20px auto;
 }
@@ -356,6 +361,9 @@ section{
 }
 
 @media screen and (max-width : 900px) {
+    .clients{
+        padding: 4rem 2%;
+    }
 
     .clients .client-img-container .client-img-Mobile{
         display: block;
