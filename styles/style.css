@@ -191,6 +191,7 @@ section{
 }
 .reel .box {
     margin: 20px auto;
+    flex-basis: 50%;
 }
 .reel .box .start-project-btn{
     display: block;
@@ -349,16 +350,16 @@ section{
 }
 .clients .client-img-container{
     text-align: center;
+    overflow: hidden;
 }
-.clients .client-img-container .client-img-PC img{
-    width: 100%;
+.clients .client-img-container div{
+    display: flex;
+    width: auto;
 }
-.clients .client-img-container .client-img-Mobile{
-    display: none;
+.clients .client-img-container div img{
+    width: 20%;
+    min-width: 125px;
 }
-.clients .textArea .client-img-container .client-img-Mobile img{
-    width: 100%;
-} 
 .clients .textArea h3{
     text-align: center;
 }
@@ -367,13 +368,11 @@ section{
     .clients{
         padding: 4rem 2%;
     }
+    .clients .client-img-container{
+        text-align: center;
+        overflow-x: scroll;
+    }
 
-    .clients .client-img-container .client-img-Mobile{
-        display: block;
-    }
-    .clients .client-img-container .client-img-PC{
-        display: none;
-    }
 }
 
 /*Projects*/
