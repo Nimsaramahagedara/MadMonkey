@@ -88,5 +88,24 @@ function menu(){
       autoplayVideoOnMobile();
       loopVideo();*/
   
+var video = document.getElementById('myVideo');
+var source = document.getElementById('videoSource');
+var userAgent = navigator.userAgent.toLowerCase();
+
+if (userAgent.indexOf('firefox') !== -1) {
+  source.src = './Resources/Mad Monkey/Intro MOV File 2.webm';
+  video.load();
+} else if (userAgent.indexOf('chrome') !== -1 || userAgent.indexOf('safari') !== -1) {
+  source.src = './Resources/Mad Monkey/Intro MOV File 2.webm';
+  video.load();
+}else if (userAgent.indexOf('edg') !== -1) { // Check for 'edg' in user agent for Microsoft Edge
+  source.src = './Resources/Mad Monkey/Intro MOV File 2.mp4';
+  video.load();
+  
+}else {
+  source.src = './Resources/Mad Monkey/Intro MOV File 2.mp4';
+  video.load();
+}
+
   
   
