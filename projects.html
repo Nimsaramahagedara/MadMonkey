@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/gallery.css">
-    <link rel="icon" href="Resources/Mad Monkey/White Monkey icon.png">
+    <link rel="icon" href="Resources/Mad Monkey/Monkey icon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Dynamic Biz ADD TITLE HERE</title>
-
+    <title>MAD Monkey Studios</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <!--Animation Library-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <style>
         .projects-container a:nth-child(1),.projects-container a:nth-child(3){
         margin-right:unset;
@@ -24,57 +28,48 @@
     </style>
 </head>
 <body>
-    <div class="scrolltop-btn" onclick="smoothScrollToId('top')"><i class="fa-solid fa-angle-up"></i></div>
+    <div class="scrolltop-btn" onclick="smoothScrollToId('pageTop')"><i class="fa-solid fa-angle-up"></i></div>
     <header id="top">
         <div class="header-element" id="home">
             <div class="navigation menu" id="nav-menu-items">
                     <a href="index.html">Home</a>
                     <a href="services.html" >Services</a>
                     <a href="projects.html">Work</a>
-                    <a onclick="smoothScrollToId('about')" href="#">About</a>
+                    <a href="index.html">About</a>
             </div>
-            <div class="logo" id="logo">
-                <img src="Resources/Mad Monkey/White Monkey icon.png" alt="">
-            </div>
+            <a href="index.html" class="logo" id="logo">
+                <img src="Resources/Mad Monkey/White Monkey icon.png" alt="" />
+              </a>
             <div class="menu-btn">
                 <i class="fa-solid fa-bars" id="icon" onclick="menu()"></i>
             </div>
             <div class="start-project">
-                <a href="" class="start-project-btn">Start your Project</a>
+                <a href="index.html" class="start-project-btn">Start your Project</a>
             </div>
         </div>
         <div class="logo-shape" id="logo-shape"></div>
     </header>
-    <section class="work" style="padding: 10rem 8% 1rem 8%;">
-        <div class="services-div">
-            <div class="box">
-                <h1>Work</h1>
-                <p>At MAD MONKEY Media, we align with brands with one thing in common – they understand that using video to tell a story is one of the most powerful vehicles out there.</p>
-            </div>
-        </div>
+    <section class="header" id="pageTop">
+        <h4>Work</h4>
+        <div class="shader"></div>
     </section>
     <section class="gallery-header">
-        <h4>Recent Projects</h4>
     </section>  
     <section class="all-projects">
         <div class="projects-container">
-            <a class="project-box" href="#">
-                <img src="Resources/Mad Monkey/Projects/project1.png" alt="">
-                <h5>Title goes here</h5>
+            <a class="project-box" href="#" data-aos="fade-right">
+              <iframe src="https://www.youtube.com/embed/2rLRN-H__Fc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </a>
-            <a class="project-box" href="#">
-                <img src="Resources/Mad Monkey/Projects/project1.png" alt="">
-                <h5>Title goes here</h5>
+            <a class="project-box" href="#" data-aos="fade-left">
+              <iframe src="https://www.youtube.com/embed/DBEZO8wn1B8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </a>
-            <a class="project-box" href="#">
-                <img src="Resources/Mad Monkey/Projects/project1.png" alt="">
-                <h5>Title goes here</h5>
+            <a class="project-box" href="#" data-aos="fade-right">
+              <iframe src="https://www.youtube.com/embed/vF7c9jFtPa8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </a>
-            <a class="project-box" href="#">
-                <img src="Resources/Mad Monkey/Projects/project1.png" alt="">
-                <h5>Title goes here</h5>
+            <a class="project-box" href="#" data-aos="fade-left">
+              <iframe src="https://www.youtube.com/embed/uW4IreSfqNs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </a>
-        </div>
+          </div>
     </section>
     
 
@@ -89,22 +84,22 @@
             <div class="second-container">
                 <div class="social-links">
                     <a href="https://www.facebook.com/profile.php?id=100067093051542&mibextid=LQQJ4d"><i class="fa-brands fa-facebook"></i></a>
-                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.youtube.com/@madmonkeystudiosyd/featured"><i class="fa-brands fa-youtube"></i></a>
                     <a href="https://instagram.com/madmonkeysyd?igshid=NTc4MTIwNjQ2YQ=="><i class="fa-brands fa-instagram"></i></a>
                 </div>
                 <div class="footer-links">
                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Video Production</a></li>
-                        <li><a href="">Work</a></li>
-                        <li><a href="">Testimonial</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="">Event Video Production</a></li>
-                        <li><a href="">Motion Graphics</a></li>
-                        <li><a href="">Recent Projects</a></li>
-                        <li><a href="">Contact Us</a></li>
-                    </ul>
+                        <li><a href="index.html" onclick="smoothScrollToId('home')">Home</a></li>
+                        <li><a href="services.html">Video Production</a></li>
+                        <li><a href="projects.html">Work</a></li>
+                        <li><a href="index.html" >Testimonial</a></li>
+                      </ul>
+                      <ul>
+                        <li><a href="services.html">Event Video Production</a></li>
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="projects.html">Recent Projects</a></li>
+                        <li><a href="index.html#contactUsForm">Contact Us</a></li>
+                      </ul>
                 </div>
                
             </div>
@@ -112,9 +107,14 @@
     </div>
     <footer>
         <p>© All rights reserved 2023 | MadMonkey</p>
-        <p>Designed By <a href="https://hellodynamicbiz.com/" class="Dynamic-Biz">Dynamic Biz</a></p>
+        <p>Designed By <a href="https://hellodynamicbiz.com/" target="_blank" class="Dynamic-Biz">Dynamic Biz</a></p>
     </footer>
     <script src="script/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="script/AOS.js"></script>
 </body>
 </html>

@@ -88,6 +88,10 @@ body{
     padding: 15px;
     color: black;
     display: flex;
+    cursor: pointer;
+}
+.all-services-container .service-box-container div .service-card:hover{
+    transform: translateY(-10px);
 }
 .service-card .icon{
     flex-basis: 26%;
@@ -136,7 +140,7 @@ body{
         row-gap: 10px;
     }
     .all-services-container{
-        margin-top: 250px;
+        margin-top: 180px;
     }
     
 }

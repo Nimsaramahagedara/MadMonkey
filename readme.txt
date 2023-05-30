@@ -1,3 +1,3 @@
 
-Page link = https://nimsaramahagedara.github.io/MadMonkey/
-HTML CSS BOOTSTRAP5 
+Page link = https://madmonkeystudio.com.au/
+HTML CSS BOOTSTRAP 5 

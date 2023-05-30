@@ -1,346 +1,418 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="icon" href="Resources/Mad Monkey/White Monkey icon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Dynamic Biz ADD TITLE HERE</title>
-</head>
-<body>
-    <div class="scrolltop-btn" onclick="smoothScrollToId('top')"><i class="fa-solid fa-angle-up"></i></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Australia Sydney" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="icon" href="Resources/Mad Monkey/Monkey icon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <!--Animation Library-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>MAD Monkey Studios</title>
+  </head>
+  <body>
+    <div class="scrolltop-btn" onclick="smoothScrollToId('HomeID')"><i class="fa-solid fa-angle-up"></i></div>
     <header id="top">
-        <div class="header-element" id="home">
-            <div class="navigation menu" id="nav-menu-items">
-                    <a onclick="smoothScrollToId('home')">Home</a>
-                    <a onclick="smoothScrollToId('service')" >Services</a>
-                    <a onclick="smoothScrollToId('projects')">Work</a>
-                    <a onclick="smoothScrollToId('about')">About</a>
-            </div>
-            <div class="logo" id="logo">
-                <img src="Resources/Mad Monkey/White Monkey icon.png" alt="">
-            </div>
-            <div class="menu-btn">
-                <i class="fa-solid fa-bars" id="icon" onclick="menu()"></i>
-            </div>
-            <div class="start-project">
-                <a href="" class="start-project-btn">Start your Project</a>
-            </div>
+      <div class="header-element" id="home">
+        <div class="navigation menu" id="nav-menu-items">
+          <a onclick="smoothScrollToId('HomeID')">Home</a>
+          <a onclick="smoothScrollToId('service')">Services</a>
+          <a onclick="smoothScrollToId('projects')">Work</a>
+          <a onclick="smoothScrollToId('reel')">About</a>
         </div>
-        <div class="logo-shape" id="logo-shape"></div>
+        <a href="index.html" class="logo" id="logo">
+          <img src="Resources/Mad Monkey/White Monkey icon.png" alt="" />
+        </a>
+        <div class="menu-btn">
+          <i class="fa-solid fa-bars" id="icon" onclick="menu()"></i>
+        </div>
+        <div class="start-project">
+          <a class="start-project-btn" onclick="smoothScrollToId('contactUsFrom')">Start your Project</a>
+        </div>
+      </div>
+      <div class="logo-shape" id="logo-shape"></div>
     </header>
-    <div class="home-video">
-        <video autoplay loop muted plays-inline width="100%" height="100%" id="myVideo">
-            <source src="./Resources/Mad Monkey/Intro MOV File 2.webm" type="video/webm" id="videoSource">
-            <source src="./Resources/Mad Monkey/Intro MOV File 2.mp4" type="video/mp4">
-        </video>
+    <div id="HomeID" class="carousel slide" data-bs-ride="carousel">
+      <div class="caro-textArea">
+        <h1>MAD Monkey Studio</h1>
+        <p><i class="fas fa-quote-left pe-2"></i> Let us capture your story and elevate your project to the next level<br/> with our professional video production and photography services ! <i class="fas fa-quote-right pe-2"></i></p>
+      </div>
+      <ol class="carousel-indicators">
+        <li data-bs-target="#HomeID" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
+        <li data-bs-target="#HomeID" data-bs-slide-to="1" aria-label="Second slide"></li>
+        <li data-bs-target="#HomeID" data-bs-slide-to="2" aria-label="Third slide"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <img src="/Resources/Mad Monkey/pexels-nino-souza-1870438.jpg" class="w-100 d-block" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img src="/Resources/Mad Monkey/WorkBg.jpeg" class="w-100 d-block" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img src="Resources/Mad Monkey/pexels-kyle-loftus-2510428.jpg" class="w-100 d-block" alt="Third slide">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#HomeID" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#HomeID" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button>
+        <div class="caro-end"></div>
     </div>
-    <section class="reel">
-        <div class="box">
-            <h1>YOUR VIDEO SHOULD<span>MAKE AN IMPACT</span></h1>
-            <p>MAD Monkey specializes in video production and Photography</p>
-            <p class="special-para">
-                Unleash the power of visual storytelling with our top-notch videography services. From adrenaline-pumping action shots captured by action cameras to breathtaking aerial footage filmed by drones, and immersive 360-degree videos shot with cutting-edge cameras, we bring your vision to life. Whether you're looking for cinematic quality or working within any budget, our team delivers stunning results that leave our satisfied customers in awe.
-            </p>
-            <a href="" class="start-project-btn">Start Your Project</a>
-        </div>
-        <div class="box">
-            <video muted controls width="100%" height="100%">
-                <source src="./Resources/Mad Monkey/Intro MOV File 2.webm" type="video/webm">
-                <source src="./Resources/Mad Monkey/Intro MOV File 2.mp4" type="video/mp4">
-            </video>
-        </div>
+    <section class="reel" id="reel">
+      <div class="box" data-aos="fade-right">
+        <h1>YOUR VIDEO SHOULD<span>MAKE AN IMPACT</span></h1>
+        <p>MAD Monkey specializes in video production and Photography</p>
+        <p class="special-para">
+          Unleash the power of visual storytelling with our top-notch videography services. From adrenaline-pumping
+          action shots captured by action cameras to breathtaking aerial footage filmed by drones, and immersive
+          360-degree videos shot with cutting-edge cameras, we bring your vision to life. Whether you're looking for
+          cinematic quality or working within any budget, our team delivers stunning results that leave our satisfied
+          customers in awe.
+        </p>
+        <a class="start-project-btn" onclick="smoothScrollToId('contactUsFrom')">Start Your Project</a>
+      </div>
+      <div class="box" data-aos="fade-left">
+        <iframe width="492" height="214" src="https://www.youtube.com/embed/uW4IreSfqNs" title="Infinity Band Live in Sydney (Highlights)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
     </section>
     <section class="services" id="service">
-        <div class="services-div">
-            <div class="box">
-                <h3>SERVICES</h3>
-                <p>MAD Monkey is a Sydney based full-service video production and photography agency.</p>
-                <p class="special-para">
-                    At our core, we believe in providing the highest quality of work and going the extra mile to ensure customer satisfaction. We understand that each project is unique, and we strive to cater to everyone's individual needs
-                </p>
-                <a href="" class="start-project-btn">Start Your Project</a>
-            </div>
-            <div class="service-box-container">
-                <div class="service-box">
-                    <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
-                            <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
-                            <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
-                        </ol>
-                        <div class="carousel-inner" role="listbox">
-                            <div class="carousel-item active">
-                                <img src="Resources/Mad Monkey/pexels-kyle-loftus-2510428.jpg" class="w-100 d-block" alt="First slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Resources/Mad Monkey/pexels-kyle-loftus-5563238.jpg" class="w-100 d-block" alt="Second slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Resources/Mad Monkey/pexels-kyle-loftus-5563240.jpg" class="w-100 d-block" alt="Third slide">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
+      <div class="services-div">
+        <div class="box" data-aos="fade-right">
+          <h3>SERVICES</h3>
+          <p>MAD Monkey is a Sydney based full-service video production and photography agency.</p>
+          <p class="special-para">
+            At our core, we believe in providing the highest quality of work and going the extra mile to ensure customer
+            satisfaction. We understand that each project is unique, and we strive to cater to everyone's individual
+            needs
+          </p>
+          <a class="start-project-btn" onclick="smoothScrollToId('contactUsFrom')">Start Your Project</a>
+        </div>
+        <div class="service-box-container" data-aos="fade-left">
+          <div class="service-box">
+            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+              <ol class="carousel-indicators">
+                <li
+                  data-bs-target="#carouselId"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="First slide"
+                ></li>
+                <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+                <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+              </ol>
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                  <img
+                    src="Resources/Mad Monkey/pexels-kyle-loftus-2510428.jpg"
+                    class="w-100 d-block"
+                    alt="First slide"
+                  />
                 </div>
+                <div class="carousel-item">
+                  <img
+                    src="Resources/Mad Monkey/pexels-kyle-loftus-5563238.jpg"
+                    class="w-100 d-block"
+                    alt="Second slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="Resources/Mad Monkey/pexels-kyle-loftus-5563240.jpg"
+                    class="w-100 d-block"
+                    alt="Third slide"
+                  />
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-            <a href="services.html" class="see-more">See More</a>
+          </div>
         </div>
-        <div class="services-image">
-            
-        </div>
+        <a href="services.html" class="see-more">See More</a>
+      </div>
+      <div class="services-image"></div>
     </section>
     <section class="clients">
-        <div class="textArea">
-            <h3>CLIENTS</h3>
-            <p>Our Clients reflect the diversity of our skills. We consider our clients collaborates, partners, and friends. We are proud to create content for some of the country's leading brands</p>
+      <div class="textArea" data-aos="fade-right">
+        <h3>CLIENTS</h3>
+      </div>
+      <div class="client-img-container" data-aos="fade">
+        <div>
+          <img src="Resources/Mad Monkey/Clients/loft.png" alt="" />
+          <img src="Resources/Mad Monkey/Clients/dydia.png" alt="" />
+          <img src="Resources/Mad Monkey/Clients/SCF_Clean_HR_Logo_2023-removebg~1.jpg" alt="" />
+          <img src="Resources/Mad Monkey/Clients/vibe.png" alt="" />
+          <img src="Resources/Mad Monkey/Clients/WhatsApp Image 2023-05-21 at 11.43.35 AM.jpg" alt="" />
         </div>
-        <div class="client-img-container">
-            <div>
-                <img src="Resources/Mad Monkey/Monkey icon.png" alt="">
-                <img src="Resources/Mad Monkey/Monkey icon.png" alt="">
-                <img src="Resources/Mad Monkey/Monkey icon.png" alt="">
-                <img src="Resources/Mad Monkey/Monkey icon.png" alt="">
-                <img src="Resources/Mad Monkey/Monkey icon.png" alt="">
-            </div>
-        </div>
+      </div>
     </section>
     <section class="services project" id="projects">
-        <div class="textArea">
-            <h3>Recent Projects</h3>
-            <p>Being a young team, we understand the needs of the young crowd and are always looking for fresh and innovative ways to capture the moment. We take great pride in our work and are committed to delivering exceptional results every time. Whether it's a wedding, a corporate event, or a family photo-shoot, we bring our best to every project.</p>
-        </div>
-        <div class="projects-container">
-            <a class="project-box" href="#">
-                <img src="Resources/Mad Monkey/Projects/project1.png" alt="">
-                <h5>Title goes here</h5>
-            </a>
-            <a class="project-box" href="#">
-                <img src="Resources/Mad Monkey/Projects/project1.png" alt="">
-                <h5>Title goes here</h5>
-            </a>
-            <a class="project-box" href="#">
-                <img src="Resources/Mad Monkey/Projects/project1.png" alt="">
-                <h5>Title goes here</h5>
-            </a>
-            <a class="project-box" href="#">
-                <img src="Resources/Mad Monkey/Projects/project1.png" alt="">
-                <h5>Title goes here</h5>
-            </a>
-        </div>
-        <a href="projects.html" class="start-project-btn">View All Project</a>
+      <div class="textArea" data-aos="fade-right">
+        <h3>Work</h3>
+      </div>
+      <div class="projects-container">
+        <a class="project-box" href="#" data-aos="fade-right">
+          <iframe src="https://www.youtube.com/embed/2rLRN-H__Fc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </a>
+        <a class="project-box" href="#" data-aos="fade-left">
+          <iframe src="https://www.youtube.com/embed/DBEZO8wn1B8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </a>
+        <a class="project-box" href="#" data-aos="fade-right">
+          <iframe src="https://www.youtube.com/embed/vF7c9jFtPa8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </a>
+        <a class="project-box" href="#" data-aos="fade-left">
+          <iframe src="https://www.youtube.com/embed/uW4IreSfqNs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </a>
+      </div>
+      <a href="projects.html" class="start-project-btn">View All Project</a>
     </section>
-    <section class="testimonial">
-        <div class="textArea" id="container-fluid">
-            <h3>TESTIMONIALS</h3>
-            <p>Read what our existing clients have to say about the MAD Monkey Media team.</p>
-            <p>what sets us apart from the rest is our friendly and approachable nature. We believe that the best work comes from a collaborative effort, where we work together to achieve the desired outcome. We value our clients' input and are always happy to listen to their ideas</p>
-          </div>
-        <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-            <!-- Indicators/dots -->
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-              <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-              <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-            </div>
-            
-            <!-- The slideshow/carousel -->
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="three-review-container">
-                    <div class="review-box">
-                        <div class="pro-img">
-                            <img src="Resources/Mad Monkey/Reviews/DarrenFill.webp" alt="">
-                        </div>
-                        <p class="rev-desc">We've had only great experiences working with BottleRocket. The team is incredibly friendly and willing to do anything in their power to make you, as the customer, happy and successful.</p>
-                        <p class="rev-name">MEGHAN MITCELL</p>
-                        <p class="rev-post">positoin</p>
-                    </div>
-                    <div class="review-box">
-                        <div class="pro-img">
-                            <img src="Resources/Mad Monkey/Reviews/DarrenFill.webp" alt="">
-                        </div>
-                        <p class="rev-desc">We've had only great experiences working with BottleRocket. The team is incredibly friendly and willing to do anything in their power to make you, as the customer, happy and successful.</p>
-                        <p class="rev-name">Name</p>
-                        <p class="rev-post">positoin</p>
-                    </div>
-                    <div class="review-box">
-                        <div class="pro-img">
-                            <img src="Resources/Mad Monkey/Reviews/DarrenFill.webp" alt="">
-                        </div>
-                        <p class="rev-desc">We've had only great experiences working with BottleRocket. The team is incredibly friendly and willing to do anything in their power to make you, as the customer, happy and successful.</p>
-                        <p class="rev-name">Name</p>
-                        <p class="rev-post">positoin</p>
-                    </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="three-review-container">
-                    <div class="review-box">
-                        <div class="pro-img">
-                            <img src="Resources/Mad Monkey/Reviews/DarrenFill.webp" alt="">
-                        </div>
-                        <p class="rev-desc">Description</p>
-                        <p class="rev-name">Name</p>
-                        <p class="rev-post">positoin</p>
-                    </div>
-                    <div class="review-box">
-                        <div class="pro-img">
-                            <img src="Resources/Mad Monkey/Reviews/DarrenFill.webp" alt="">
-                        </div>
-                        <p class="rev-desc">Description</p>
-                        <p class="rev-name">Name</p>
-                        <p class="rev-post">positoin</p>
-                    </div>
-                    <div class="review-box">
-                        <div class="pro-img">
-                            <img src="Resources/Mad Monkey/Reviews/DarrenFill.webp" alt="">
-                        </div>
-                        <p class="rev-desc">Description</p>
-                        <p class="rev-name">Name</p>
-                        <p class="rev-post">positoin</p>
-                    </div>
-                </div>
-              </div>
-
-              <div class="carousel-item">
-                <div class="three-review-container">
-                    <div class="review-box">
-                        <div class="pro-img">
-                            <img src="Resources/Mad Monkey/Reviews/DarrenFill.webp" alt="">
-                        </div>
-                        <p class="rev-desc">Description</p>
-                        <p class="rev-name">Name</p>
-                        <p class="rev-post">positoin</p>
-                    </div>
-                    <div class="review-box">
-                        <div class="pro-img">
-                            <img src="Resources/Mad Monkey/Reviews/DarrenFill.webp" alt="">
-                        </div>
-                        <p class="rev-desc">Description</p>
-                        <p class="rev-name">Name</p>
-                        <p class="rev-post">positoin</p>
-                    </div>
-                    <div class="review-box">
-                        <div class="pro-img">
-                            <img src="Resources/Mad Monkey/Reviews/DarrenFill.webp" alt="">
-                        </div>
-                        <p class="rev-desc">Description</p>
-                        <p class="rev-name">Name</p>
-                        <p class="rev-post">positoin</p>
-                    </div>
-                </div>
-              </div>
-            </div>
-            
-            <!-- Left and right controls/icons -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-              <span class="carousel-control-next-icon"></span>
-            </button>
-          </div>
-          
-    </section>
-    <section class="clients contact-us-form">
-        <h5>Let's Work Together</h5>
-        <div class="contanct-us-container">
-            <div class="contact-details">
-                <div class="contact-box">
-                    <i class="fa-solid fa-envelope"> </i><p>Email Us</p>
-                    <p>Our friendly team is here to help.</p>
-                    <a href="mailto:madmonkeysd@gmail.com">madmonkeysd@gmail.com</a>
-                </div>
-                <div class="contact-box">
-                    <i class="fa-solid fa-phone"> </i><p>Call Us</p>
-                    <a href="tel:+61422679460">+61422679460</a><br/>
-                    <a href="tel:+61478696576">+61478696576</a>
-                </div>
-                <div class="contact-box">
-                    <i class="fa-solid fa-location-dot"> </i><p>Location</p>
-                    <p>Our friendly team is here to help.</p>
-                    <a href="">84 Courallie Ave, Homebush West NSW 2140, Australia</a>
-                </div>
-                <div id="map-container-google-1" class="z-depth-1-half map-container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13876534.41982684!2d160.238344368441!3d-35.424381738776326!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12bb7128b6e2b9%3A0xdaa8ee797cb1f6d9!2sMadmonkey%20Studio!5e0!3m2!1sen!2slk!4v1684340024119!5m2!1sen!2slk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                
-            </div>
-            <div class="form">
-                <form action="">
-                    <label for="name">Name</label>
-                    <input type="text" name="name">
-    
-                    <label for="email">Email</label>
-                    <input type="email" name="email">
-    
-                    <label for="desc">Description</label>
-                    <textarea name="desc" id="" cols="30" rows="10">
-    
-                    </textarea>
-                    <input type="submit" class="start-project-btn">
-                </form>
-            </div>
-
+   <section class="testimonial">
+      <div class="textArea" id="container-fluid" data-aos="fade-right">
+        <h3>TESTIMONIALS</h3>
+      </div>
+      <div id="demo" class="carousel slide" data-bs-ride="carousel" data-aos="fade-left">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
         </div>
-        
+
+        <div id="carouselExampleControls" class="carousel slide text-center carousel-dark" data-mdb-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                class="rounded-circle shadow-1-strong mb-4"
+                src="Resources/Mad Monkey/Reviews/Person2.jpeg"
+                alt="avatar"
+                style="width: 150px"
+              />
+              <div class="row d-flex justify-content-center">
+                <div class="col-lg-8 text-light">
+                  <h5 class="mb-3">Carmen Huynh</h5>
+                  <p class="text-muted">
+                    <i class="fas fa-quote-left pe-2"></i>
+                    I highly recommend this MadMonkey Studios for capturing my recent birthday party. The team's professionalism and attention to detail were truly outstanding. They beautifully captured every special moment, and their creative editing added an extra touch of magic to the final footage. 5 stars all the way!
+                  </p>
+                </div>
+              </div>
+              <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+              </ul>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="rounded-circle shadow-1-strong mb-4"
+                src="Resources/Mad Monkey/Reviews/Abigel.jpeg"
+                alt="avatar"
+                style="width: 150px"
+              />
+              <div class="row d-flex justify-content-center">
+                <div class="col-lg-8 text-light">
+                  <h5 class="mb-3">Abigail Colorado</h5>
+                  <p class="text-muted">
+                    <i class="fas fa-quote-left pe-2"></i>
+                    I engaged Mad Monkey for my sister’s Bridal Shower and Hens party and they went above and beyond. They were punctual, made sure every important moment is captured, all the shots were perfect. They are professional and reliable. Last but not the least they know what the customers want and they delivered it. Highly recommend!
+                  </p>
+                </div>
+              </div>
+              <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+              </ul>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="rounded-circle shadow-1-strong mb-4"
+                src="Resources/Mad Monkey/Reviews/Peraon1.jpeg"
+                alt="avatar"
+                style="width: 150px"
+              />
+              <div class="row d-flex justify-content-center">
+                <div class="col-lg-8 text-light">
+                  <h5 class="mb-3">Phyllis Van Houten</h5>
+                  <p class="text-muted">
+                    <i class="fas fa-quote-left pe-2"></i>
+                    As a Marketing Professional of 35 years  in Sydney i found it a pleasure to work with Mad Monkeys. Their professional approach and delivery  to brief was exceptional.  They go the extra mile!
+                  </p>
+                </div>
+              </div>
+              <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+              </ul>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-mdb-target="#carouselExampleControls"
+            data-mdb-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-mdb-target="#carouselExampleControls"
+            data-mdb-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+     
+    <section class="clients contact-us-form" id="contactUsFrom">
+      <h5>Let's Work Together</h5>
+      <div class="contanct-us-container">
+        <div class="contact-details" data-aos="fade-right">
+          <div class="contact-box">
+            <i class="fa-solid fa-envelope"> </i>
+            <p>Email Us</p>
+            <p>Our friendly team is here to help.</p>
+            <a href="mailto:info@madmonkeystudio.com.au" style="text-transform: lowercase;">info@madmonkeystudio.com.au</a>
+          </div>
+          <div class="contact-box">
+            <i class="fa-solid fa-phone"> </i>
+            <p>Call Us</p>
+            <a href="tel:+61422679460">+61422679460</a><br />
+            <a href="tel:+61478696576">+61478696576</a>
+          </div>
+          <div class="contact-box">
+            <i class="fa-solid fa-location-dot"> </i>
+            <p>Location</p>
+            <p>Our friendly team is here to help.</p>
+            <a href="">84 Courallie Ave, Homebush West NSW 2140, Australia</a>
+          </div>
+          <div id="map-container-google-1" class="z-depth-1-half map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13876534.41982684!2d160.238344368441!3d-35.424381738776326!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12bb7128b6e2b9%3A0xdaa8ee797cb1f6d9!2sMadmonkey%20Studio!5e0!3m2!1sen!2slk!4v1684340024119!5m2!1sen!2slk"
+              width="400"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="form" data-aos="fade-left">
+          <form action="https://formspree.io/f/xknaawpe" method="post">
+            <label for="name">Name</label>
+            <input type="text" name="name" />
+
+            <label for="email">Email</label>
+            <input type="email" name="email" />
+
+            <label for="desc">Description</label>
+            <textarea name="message" id="" cols="30" rows="10"> </textarea>
+            <input type="submit" class="start-project-btn" />
+          </form>
+        </div>
+      </div>
     </section>
     <div class="footer" id="about">
-        <div class="first-container">
-            <div class="join-fam">
-                <div class="footer-logo">
-                    <img src="Resources/Mad Monkey/2 White LOGO 5000x5000.png" alt="" srcset="">
-                </div>
-                <p class="special-para">Welcome To Our Videography/Photography Website! We're A Sydney Based Team Of Passionate Professionals Who Started This Journey In 2018. Since Then, We Have Worked On Over 100 Projects, Capturing Unforgettable Moments And Turning Them Into Lasting Memories</p>
-            </div>
-            <div class="second-container">
-                <div class="social-links">
-                    <a href="https://www.facebook.com/profile.php?id=100067093051542&mibextid=LQQJ4d"><i class="fa-brands fa-facebook"></i></a>
-                    <a href=""><i class="fa-brands fa-youtube"></i></a>
-                    <a href="https://instagram.com/madmonkeysyd?igshid=NTc4MTIwNjQ2YQ=="><i class="fa-brands fa-instagram"></i></a>
-                </div>
-                <div class="footer-links">
-                    <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Video Production</a></li>
-                        <li><a href="">Work</a></li>
-                        <li><a href="">Testimonial</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="">Event Video Production</a></li>
-                        <li><a href="">Motion Graphics</a></li>
-                        <li><a href="">Recent Projects</a></li>
-                        <li><a href="">Contact Us</a></li>
-                    </ul>
-                </div>
-               
-            </div>
+      <div class="first-container">
+        <div class="join-fam">
+          <div class="footer-logo">
+            <img src="Resources/Mad Monkey/2 White LOGO 5000x5000.png" alt="" srcset="" />
+          </div>
+          <p class="special-para">
+            Welcome To Our Videography/Photography Website! We're A Sydney Based Team Of Passionate Professionals Who
+            Started This Journey In 2018. Since Then, We Have Worked On Over 100 Projects, Capturing Unforgettable
+            Moments And Turning Them Into Lasting Memories
+          </p>
         </div>
+        <div class="second-container">
+          <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=100067093051542&mibextid=LQQJ4d"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://www.youtube.com/@madmonkeystudiosyd/featured"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://instagram.com/madmonkeysyd?igshid=NTc4MTIwNjQ2YQ=="
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+          <div class="footer-links">
+            <ul>
+              <li><a onclick="smoothScrollToId('HomeID')">Home</a></li>
+              <li><a href="services.html">Video Production</a></li>
+              <li><a href="projects.html">Work</a></li>
+              <li><a onclick="smoothScrollToId('carouselExampleControls')">Testimonial</a></li>
+            </ul>
+            <ul>
+              <li><a href="services.html">Event Video Production</a></li>
+              <li><a onclick="smoothScrollToId('reel')">About</a></li>
+              <li><a href="projects.html">Recent Projects</a></li>
+              <li><a onclick="smoothScrollToId('contactUsFrom')">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
     <footer>
-        <p>© All rights reserved 2023 | MadMonkey</p>
-        <p>Designed By <a href="https://hellodynamicbiz.com/" class="Dynamic-Biz">Dynamic Biz</a></p>
+      <p>© All rights reserved 2023 | MadMonkey</p>
+      <p>Designed By <a href="https://hellodynamicbiz.com/" target="_blank" class="Dynamic-Biz">Dynamic Biz</a></p>
     </footer>
 
     <script src="script/script.js" defer></script>
     <script>
-        window.onload = ()=>{
-            document.getElementById('myVideo').play();
-        }
+      /*window.onload = () => {
+        document.getElementById("myVideo").play();
+      };*/
     </script>
     <script src="script/projects.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <!--Animation Library Js-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="script/AOS.js"></script>
+  </body>
 </html>
